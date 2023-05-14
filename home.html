@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+    <style>
+    body{
+    background-color:#FFFAF0;
+    }
+    header{
+       background-color:#FFE4B5;
+    }
+		h1{
+		color:#173e43;
+		text-align:center;
+		text-size:50px;
+		}
+		p{
+		text-align:center;
+		font-family:cursive;
+		font-size: 20px;
+		}
+		p1{
+		font-family:cursive;
+		font-size: 20px;
+		}
+		button{
+		  position: absolute;
+		  background-color:#191970;
+		  color: #f5fffa;
+		  border:none;
+		  border-radius:10px;
+		  padding:15px;
+		  min-height:30px;
+		  min-width: 120px;
+
+		}
+		textarea{
+
+		}
+	</style>
+
+
+</head>
+<body class="maincon">
+
+	<header>
+		<div class="jumbotron text-center">
+		<h1>Youtube Comments Spam Detection</h1>
+		<p class="text-muted font-weight-bold">Machine Learning Web Application </p>
+			<br>			<br>
+			<br>
+			<br>
+			<br>
+
+		</div>
+	</header>
+
+	<div class="container p-3 my-3 text-white text-justify" >
+		<div class="row">
+		<div class="col-xl-12">
+		<div class="form-group">
+			<form action="{{ url_for('predict')}}" method="POST">
+			<p1 class="font-weight-bold">Enter Your Comment Here :</p1>
+				<br><br>
+			<!-- <input type="text" name="comment"/> -->
+			<textarea name="comment" rows="5" cols="80" class="text-justify"></textarea>
+			<br/>
+			<button type="submit" class="btn btn-primary font-weight-bold text-white">Predict</button>
+			</form>
+		</div>
+		</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
